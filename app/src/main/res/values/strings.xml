@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BTVN_5</string>
+    <string name="lowPriority">#0000ff</string>
+    <string name="normalPriority">#ff5000</string>
+    <string name="highPriotity">#ff0065</string>
+    <string name="todo_list">To Do</string>
+    <string name="done_list">Done</string>
+</resources>
