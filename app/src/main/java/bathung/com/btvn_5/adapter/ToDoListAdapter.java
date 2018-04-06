@@ -33,6 +33,7 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.Recycl
     private static  final String LOWPRIORITY ="#2ECC71";
     private static  final String NORMALPRIORITY ="#ff5000";
     private static  final String HIGHPRIORITY ="#ff0065";
+    private static  final String EDIT_OR_DONE_DIALOG_MESSAGE="Are you want to edit or done it?";
     public ToDoListAdapter(List<Task> tasks, Context context, TodoListFragment todoListFragment){
             this.taskList = tasks;
             this.context=context;
@@ -78,8 +79,8 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.Recycl
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         // Setting Dialog Title
         alertDialog.setTitle("Alert!");
-        // Setting Dialog Message
-        alertDialog.setMessage("Are you want to edit or done it?");
+                // Setting Dialog Message
+        alertDialog.setMessage(EDIT_OR_DONE_DIALOG_MESSAGE);
         // Setting Positive “done” Button
         alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "DONE",
                 new DialogInterface.OnClickListener() {
